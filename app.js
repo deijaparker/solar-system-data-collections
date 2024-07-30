@@ -39,7 +39,11 @@ const solarSystem = [
 }
     
     // 8. Iterate through the solarSystem array and print only the objects that have a ringSystem (where ringSystem: true), and ignore the others.
-    
+    solarSystem.forEach(planet => {
+        if (planet.ringSystem) {
+            console.log(planet);
+        }
+    });    
     
     //////////////////////////////
     // The Solar System, Part 2 //
