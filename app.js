@@ -207,7 +207,9 @@ const solarSystem = [
     console.log(totalSatellites);
     
     // 4. Write a conditional that checks if Mercury's radiusp is a string (remember the typeof command). If Mercury's radiusp is a string, change the value to be the same as its radiuse value. (radiusp is radius at the poles, radiuse is radius at the equator).
-    
+    if (typeof system.mercury.radiusp === 'string') {
+        system.mercury.radiusp = system.mercury.radiuse;
+    }
     
     // 5. Console.log Mercury's radiusp (should be 2439, not 'same').
     
