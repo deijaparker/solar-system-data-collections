@@ -29,7 +29,7 @@ const solarSystem = [
     solarSystem.find(planet => planet.name === "Earth").diameter = "7,917.5 miles";
     
     // 6. Change Mercury's ringSystem boolean to true.
-    
+    solarSystem.find(planet => planet.name === "Mercury").ringSystem = true;
     
     // 7. Change Uranus' moon "Umbriel" to "Oberon"
     
