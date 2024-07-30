@@ -20,7 +20,7 @@ const solarSystem = [
     console.log(solarSystem.find(planet => planet.name === "Neptune").moons.find(moon => moon === "Nereid"));
     
     // 3. Add a new moon called "Endor" to Venus' moons array.
-    
+    solarSystem.find(planet => planet.name === "Venus").moons.push("Endor");
     
     // 4. Add a Pluto object to the solarSystem array using .push. The object should contain Pluto's name, ringSystem boolean, and moons array (which includes "Charon").
     
