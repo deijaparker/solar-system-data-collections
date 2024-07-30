@@ -203,7 +203,8 @@ const solarSystem = [
     console.log(system.venus.eccentricity);
     
     // 3. Console.log the sum of the number of satellites of Jupiter, Saturn, Uranus, and Neptune (131)
-    
+    let totalSatellites = system.jupiter.satellites + system.saturn.satellites + system.uranus.satellites + system.neptune.satellites;
+    console.log(totalSatellites);
     
     // 4. Write a conditional that checks if Mercury's radiusp is a string (remember the typeof command). If Mercury's radiusp is a string, change the value to be the same as its radiuse value. (radiusp is radius at the poles, radiuse is radius at the equator).
     
