@@ -32,7 +32,11 @@ const solarSystem = [
     solarSystem.find(planet => planet.name === "Mercury").ringSystem = true;
     
     // 7. Change Uranus' moon "Umbriel" to "Oberon"
-    
+    let uranus = solarSystem.find(planet => planet.name === "Uranus");
+    let moonIndex = uranus.moons.indexOf("Umbriel");
+    if (moonIndex !== -1) {
+    uranus.moons[moonIndex] = "Oberon";
+}
     
     // 8. Iterate through the solarSystem array and print only the objects that have a ringSystem (where ringSystem: true), and ignore the others.
     
